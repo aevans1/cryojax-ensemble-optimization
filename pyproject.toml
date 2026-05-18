@@ -41,7 +41,7 @@ dependencies = [
     "dm-pix",
     "optax",
     "optimistix",
-    "PyYAML"
+    "PyYAML",
     "openmm"
 ]
 
