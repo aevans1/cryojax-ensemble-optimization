@@ -42,7 +42,6 @@ dependencies = [
     "optax",
     "optimistix",
     "PyYAML",
-    "openmm"
 ]
 
 [project.optional-dependencies]
