@@ -7,11 +7,14 @@ from ._langevin_dynamics import (
     ParallelSteeredOverdampedLangevinSampler as ParallelSteeredOverdampedLangevinSampler,
     SteeredOverdampedLangevinSampler as SteeredOverdampedLangevinSampler,
 )
-from ._molecular_dynamics import (
-    EnsembleSteeredMDSimulator as EnsembleSteeredMDSimulator,
-    SteeredMDSimulator as SteeredMDSimulator,
-    md_params_config_to_openmm_overrides as md_params_config_to_openmm_overrides,
-)
+try:
+    from ._molecular_dynamics import (
+        EnsembleSteeredMDSimulator as EnsembleSteeredMDSimulator,
+        SteeredMDSimulator as SteeredMDSimulator,
+        md_params_config_to_openmm_overrides as md_params_config_to_openmm_overrides,
+    )
+except (ImportError, AttributeError):
+    pass
 from .base_prior_projector import (
     AbstractEnsemblePriorProjector as AbstractEnsemblePriorProjector,
     AbstractPriorProjector as AbstractPriorProjector,
