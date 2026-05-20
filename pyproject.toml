@@ -38,7 +38,6 @@ dependencies = [
     "tqdm",
     "cryojax",
     "cryospax",
-    "openmm",
     "dm-pix",
     "optax",
     "optimistix",

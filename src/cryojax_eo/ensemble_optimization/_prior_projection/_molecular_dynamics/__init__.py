@@ -4,5 +4,5 @@ try:
         SteeredMDSimulator as SteeredMDSimulator,
         md_params_config_to_openmm_overrides as md_params_config_to_openmm_overrides,
     )
-except (ImportError, ArithmeticError):
+except (ImportError, AttributeError):
     pass
